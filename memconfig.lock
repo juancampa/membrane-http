@@ -1,0 +1,71 @@
+{
+  "types": {
+    "sys_http": {
+      "gref_hash": "3ed2c2f0ea31bb0a44195be921dd424c2a43732f7d0289edf110619ec287c45a",
+      "type": "sys-http:Root"
+    },
+    "hola": {
+      "gref_hash": "3ed2c2f0ea31bb0a44195be921dd424c2a43732f7d0289edf110619ec287c45a",
+      "type": "sys-http:Root"
+    }
+  },
+  "imports": [
+    {
+      "name": "sys-http",
+      "schema": {
+        "types": [
+          {
+            "name": "Root",
+            "actions": [],
+            "fields": [
+              {
+                "name": "resource",
+                "type": "Resource",
+                "params": [
+                  {
+                    "name": "url",
+                    "type": "String"
+                  },
+                  {
+                    "name": "method",
+                    "type": "String"
+                  },
+                  {
+                    "name": "headers",
+                    "type": "String"
+                  },
+                  {
+                    "name": "body",
+                    "type": "String"
+                  }
+                ]
+              }
+            ],
+            "events": []
+          },
+          {
+            "name": "Resource",
+            "actions": [],
+            "fields": [
+              {
+                "name": "body",
+                "type": "String",
+                "params": []
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "params": []
+              }
+            ],
+            "events": []
+          }
+        ],
+        "imports": []
+      },
+      "source": {
+        "Program": "tbd"
+      }
+    }
+  ]
+}
